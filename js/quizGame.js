@@ -7,7 +7,7 @@ function startQuiz(){
 }
 
 function questionOne(){
-    console.log(quizAnswers);
+    
     userInput = prompt("1. What Swedish band is famous for winning Eurovision with Waterloo?\n(only enter A, B, C or D)\n\nA) Europe\nB) ABBA\nC) Ace of Base \nD) Roxette");
     
     userInput = userInput.toLowerCase();
@@ -15,7 +15,13 @@ function questionOne(){
     if(userInput == quizAnswers[0]){
         correctAnswers.push(userInput);
         amountCorrect = amountCorrect +1;
-    }else
+        alert("Right answer!")
+    }/*else if(userInput !== "a" && userInput !== "b" && userInput !== "c" && userInput !== "d"){
+        alert("Invalid Entry!\nPlease only enter A, B, C or D");
+        questionOne();
+    }else if(userInput != quizAnswers[0]){
+       alert("Wrong answer!");
+    }*/
 
     questionTwo();
 }
@@ -29,8 +35,10 @@ function questionTwo(){
     if(userInput == quizAnswers[1]){
         correctAnswers.push(userInput);
         amountCorrect = amountCorrect +1;
-    }
-    
+    }/*else if(userInput != "a" || userInput != "b" || userInput != "c" || userInput != "a" ){
+        alert("Invalid Entry!\nPlease only enter A, B, C or D");
+        questionTwo();
+    }*/
     questionThree();
 }
 
@@ -43,8 +51,10 @@ function questionThree(){
     if(userInput == quizAnswers[2]){
         correctAnswers.push(userInput);
         amountCorrect = amountCorrect +1;
-    }
-
+    }/*else if(userInput != "a" || userInput != "b" || userInput != "c" || userInput != "a" ){
+        alert("Invalid Entry!\nPlease only enter A, B, C or D");
+        questionThree();
+    }*/
     questionFour();
 }
 
@@ -57,7 +67,10 @@ function questionFour(){
     if(userInput == quizAnswers[3]){
         correctAnswers.push(userInput);
         amountCorrect = amountCorrect +1;
-    }
+    }/*else if(userInput != "a" || userInput != "b" || userInput != "c" || userInput != "a" ){
+        alert("Invalid Entry!\nPlease only enter A, B, C or D");
+        questionFour();
+    }*/
 
     questionFive();
 }
@@ -71,7 +84,10 @@ function questionFive(){
     if(userInput == quizAnswers[4]){
         correctAnswers.push(userInput);
         amountCorrect = amountCorrect +1;
-    }
+    }/*else if(userInput != "a" || userInput != "b" || userInput != "c" || userInput != "a" ){
+        alert("Invalid Entry!\nPlease only enter A, B, C or D");
+        questionFive();
+    }*/
 
     questionSix();
 }
@@ -85,7 +101,10 @@ function questionSix(){
     if(userInput == quizAnswers[5]){
         correctAnswers.push(userInput);
         amountCorrect = amountCorrect +1;
-    }
+    }/*else if(userInput != "a" || userInput != "b" || userInput != "c" || userInput != "a" ){
+        alert("Invalid Entry!\nPlease only enter A, B, C or D");
+        questionSix();
+    }*/
 
     questionSeven();
 }
@@ -99,7 +118,10 @@ function questionSeven(){
     if(userInput == quizAnswers[6]){
         correctAnswers.push(userInput);
         amountCorrect = amountCorrect +1;
-    }
+    }/*else if(userInput != "a" || userInput != "b" || userInput != "c" || userInput != "a" ){
+        alert("Invalid Entry!\nPlease only enter A, B, C or D");
+        questionSeven();
+    }*/
 
     questionEight()
 }
@@ -114,6 +136,11 @@ function questionEight(){
         correctAnswers.push(userInput);
         amountCorrect = amountCorrect +1;
     }
+    
+    /*else if(userInput != "a" || userInput != "b" || userInput != "c" || userInput != "a" ){
+        alert("Invalid Entry!\nPlease only enter A, B, C or D");
+        questionEight();
+    }*/
     
     console.log("The correct answers are: " + quizAnswers);
     //alert("Correct Answers: " + amountCorrect + "/8" );
